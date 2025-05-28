@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What does QPSK stand for?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Quadrature Phase Shift Keying",
+        "b": "Quadrature Pulse Shaping Keying",
+        "c": "Quantized Phase Sampling Keying",
+        "d": "Quadrature Packet Switching Key"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct! QPSK stands for Quadrature Phase Shift Keying. <a href='https://en.wikipedia.org/wiki/Phase-shift_keying'>Learn more</a>",
+        "b": "Incorrect. This is not the correct expansion of QPSK.",
+        "c": "Incorrect. This is a misleading term.",
+        "d": "Incorrect. This is not a standard modulation scheme."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In M-ary PSK, what does 'M' represent?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The number of transmitters",
+        "b": "The number of possible phase shifts",
+        "c": "The number of receivers",
+        "d": "The number of channels"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. M is unrelated to the number of transmitters.",
+        "b": "Correct! 'M' in M-ary PSK indicates the number of distinct phase shifts. <a href='https://en.wikipedia.org/wiki/M-ary_transmission'>More info</a>",
+        "c": "Incorrect. M does not refer to receivers.",
+        "d": "Incorrect. M is not linked to channel count."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following modulation schemes uses four distinct phase shifts?",
+      "answers": {
+        "a": "BPSK",
+        "b": "8-PSK",
+        "c": "QPSK",
+        "d": "16-QAM"
+      },
+      "explanations": {
+        "a": "Incorrect. BPSK uses only two phases.",
+        "b": "Incorrect. 8-PSK uses eight phases.",
+        "c": "Correct! QPSK uses four phase shifts. <a href='https://en.wikipedia.org/wiki/Quadrature_phase-shift_keying'>Reference</a>",
+        "d": "Incorrect. 16-QAM uses both amplitude and phase variations."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the role of BER in digital modulation?",
+      "answers": {
+        "a": "To increase signal power",
+        "b": "To define modulation order",
+        "c": "To measure data compression",
+        "d": "To quantify transmission errors"
+      },
+      "explanations": {
+        "a": "Incorrect. BER does not increase power.",
+        "b": "Incorrect. Modulation order is separate from BER.",
+        "c": "Incorrect. Compression and BER are different metrics.",
+        "d": "Correct! BER (Bit Error Rate) measures the number of bit errors. <a href='https://en.wikipedia.org/wiki/Bit_error_rate'>Learn more</a>"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which factor most affects the BER in a digital communication system?",
+      "answers": {
+        "a": "Signal-to-noise ratio (SNR)",
+        "b": "Cable length",
+        "c": "Clock speed",
+        "d": "User interface design"
+      },
+      "explanations": {
+        "a": "Correct! SNR directly impacts the number of errors in received data. <a href='https://en.wikipedia.org/wiki/Signal-to-noise_ratio'>More here</a>",
+        "b": "Incorrect. While cable length may influence loss, SNR is more direct.",
+        "c": "Incorrect. Clock speed affects timing, not BER directly.",
+        "d": "Incorrect. UI design does not impact BER."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

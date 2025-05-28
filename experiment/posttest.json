@@ -2,35 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the main benefit of using QPSK over BPSK in digital communication?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It reduces bandwidth",
+        "b": "It increases power consumption",
+        "c": "It allows higher data rate",
+        "d": "It uses fewer components"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. QPSK does not reduce bandwidth compared to BPSK.",
+        "b": "Incorrect. QPSK does not necessarily increase power consumption.",
+        "c": "Correct! QPSK allows transmission of 2 bits per symbol, effectively doubling the data rate. <a href='https://en.wikipedia.org/wiki/Quadrature_phase-shift_keying'>More info</a>",
+        "d": "Incorrect. The number of components is generally the same."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What happens to BER as the modulation order (M) increases in M-ary PSK?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "BER remains constant",
+        "b": "BER decreases",
+        "c": "BER increases",
+        "d": "BER is not affected"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. BER does not stay the same with increased modulation order.",
+        "b": "Incorrect. BER usually increases with higher M due to reduced phase separation.",
+        "c": "Correct! As M increases, symbols are closer, making them more prone to errors. <a href='https://en.wikipedia.org/wiki/M-ary_transmission'>More info</a>",
+        "d": "Incorrect. BER is affected by modulation complexity."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is true about Bit Error Rate (BER)?",
+      "answers": {
+        "a": "It is measured in volts",
+        "b": "It represents the ratio of incorrect bits to total bits sent",
+        "c": "It increases with higher SNR",
+        "d": "It is only relevant in analog modulation"
+      },
+      "explanations": {
+        "a": "Incorrect. BER is a ratio, not a voltage.",
+        "b": "Correct! BER is the number of incorrect bits divided by the total number of transmitted bits. <a href='https://en.wikipedia.org/wiki/Bit_error_rate'>Read more</a>",
+        "c": "Incorrect. Higher SNR usually reduces BER.",
+        "d": "Incorrect. BER is a key metric in digital communication."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is Gray coding used in digital modulation schemes like QPSK or 8-PSK?",
+      "answers": {
+        "a": "To save energy",
+        "b": "To reduce frequency usage",
+        "c": "To minimize bit errors due to symbol errors",
+        "d": "To increase data compression"
+      },
+      "explanations": {
+        "a": "Incorrect. Gray coding does not primarily save energy.",
+        "b": "Incorrect. It doesn’t reduce frequency usage.",
+        "c": "Correct! Gray coding ensures only one bit changes between adjacent symbols, reducing bit error probability. <a href='https://en.wikipedia.org/wiki/Gray_code'>Learn more</a>",
+        "d": "Incorrect. Gray coding is not related to compression."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a key characteristic of QPSK modulation?",
+      "answers": {
+        "a": "It transmits one bit per symbol",
+        "b": "It uses amplitude variation only",
+        "c": "It represents data using four phase shifts",
+        "d": "It cannot be used for wireless communication"
+      },
+      "explanations": {
+        "a": "Incorrect. QPSK transmits two bits per symbol.",
+        "b": "Incorrect. QPSK uses phase variation, not amplitude.",
+        "c": "Correct! QPSK uses four phase states to encode two bits per symbol. <a href='https://en.wikipedia.org/wiki/Quadrature_phase-shift_keying'>More here</a>",
+        "d": "Incorrect. QPSK is commonly used in wireless systems."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
