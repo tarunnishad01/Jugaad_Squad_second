@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Virtual Lab - Advanced Modulation Experiments</title>
+	<!-- Add CSS at the head of HTML file -->
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<!-- Your code goes here-->
+
+	<header>
+		<h1>Virtual Lab: Advanced Modulation Experiments</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Experiment Overview</h2>
+			<p>
+				Welcome to the virtual modulation lab! Here you can experiment with advanced digital modulation schemes
+				like QPSK and M-ary PSK. Explore constellation diagrams, add noise, and observe the Bit Error Rate (BER)
+				performance.
+				This lab allows you to visualize how modulation, noise, and demodulation interact in communication
+				systems.
+			</p>
+		</section>
+
+		<section>
+			<h2>QPSK Modulation & Demodulation</h2>
+			<div class="grid">
+				<div class="panel">
+					<h3>Parameters</h3>
+					<label for="qpsk-snr">SNR (dB):
+						<input type="number" id="qpsk-snr" value="10" min="0" max="30" />
+					</label>
+					<label for="qpsk-num-symbols">Number of Symbols:
+						<input type="number" id="qpsk-num-symbols" value="1000" min="100" max="50000" step="100" />
+					</label>
+					<button id="qpsk-run">Run QPSK Simulation</button>
+					<div id="qpsk-error" class="error" style="display: none;"></div>
+				</div>
+
+				<div class="panel">
+					<h3>Constellation Diagram</h3>
+					<canvas id="qpsk-constellation" width="400" height="300"
+						aria-label="QPSK Constellation Diagram"></canvas>
+				</div>
+
+				<div class="panel">
+					<h3>BER Performance</h3>
+					<canvas id="qpsk-ber" width="400" height="300" aria-label="QPSK BER Curve"></canvas>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>M-ary PSK Modulation & Demodulation</h2>
+			<div class="grid">
+				<div class="panel">
+					<h3>Parameters</h3>
+					<label for="mpsk-m">M (PSK Order):
+						<select id="mpsk-m">
+							<option value="2">2 (BPSK)</option>
+							<option value="4" selected>4 (QPSK)</option>
+							<option value="8">8 (QPSK)</option>
+							<option value="16">16 (QPSK)</option>
+						</select>
+					</label>
+					<label for="mpsk-snr">SNR (dB):
+						<input type="number" id="mpsk-snr" value="10" min="0" max="30" />
+					</label>
+					<label for="mpsk-num-symbols">Number of Symbols:
+						<input type="number" id="mpsk-num-symbols" value="1000" min="100" max="50000" step="100" />
+					</label>
+					<button id="mpsk-run">Run M-ary PSK Simulation</button>
+					<div id="mpsk-error" class="error" style="display: none;"></div>
+				</div>
+
+				<div class="panel">
+					<h3>Constellation Diagram</h3>
+					<canvas id="mpsk-constellation" width="400" height="300"
+						aria-label="M-ary PSK Constellation Diagram"></canvas>
+				</div>
+
+				<div class="panel">
+					<h3>BER Performance</h3>
+					<canvas id="mpsk-ber" width="400" height="300" aria-label="M-ary PSK BER Curve"></canvas>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		&copy; 2025 Virtual Modulation Lab 
+	</footer>
+
+
 </body>
+
+<!-- Add JS at the bottom of HTML file -->
+<script src="./js/main.js"></script>
+</body>
+
 </html>
