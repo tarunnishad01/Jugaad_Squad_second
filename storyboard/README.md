@@ -4,42 +4,137 @@
 
 ## Storyboard
 
-Delete this line before submission : The core principle of storyboarding is to make the lab/experiment documentation elaborated in a manner that it makes easy for any person (developer/domain and non domain faculty/student) to understand and develop the lab/experiment.
-
-Experiment 1: Name of the Experiment
-
+Experiment 1: Name of the Experiment :"Detailed Analog/Digital Modulation Experiments – Advanced QPSK, M-ary PSK with BER"
 ### 1. Story Outline
 
-Describe outline here ( Guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
+The user approaches the simulator to understand the concepts of advanced digital modulation techniques such as QPSK and M-ary PSK, along with Bit Error Rate (BER) analysis. Through interactive modules—Demo, Practice, and Experiment—the user engages with signal waveforms, constellation diagrams, and performance under noisy channels. The simulator helps visualize key modulation properties and allows hands-on experimentation and result verification.
+
 
 ### 2. Story
-
-Describe the Story introduction here (Guide : The next step is to write a story. Story should be a brief logical description in simple English. It should talk about the overall execution of the experiment in a simplified manner. (should not include any equations/ drawings). The story should include the following points) )
-
 #### 2.1 Set the Visual Stage Description:
-Describe here : (Guide : When a user lands up into a simulator, the visual stage is the first thing that user comes across. The visual stage should include all the elements to be seen by a user on an imaginary canvas.  (This should NOT include any drawings. ) )
+Upon landing on the simulator page, the user sees three interactive options: Demo, Practice, and Experiment.
+
+* Demo – A control panel displays instructions at the top. A live signal modulation animation appears below, showcasing modulated waveforms or constellation diagrams. Buttons include Start, Pause, Reset, and a Noise slider to simulate channel conditions.
+
+* Practice – Users choose modulation schemes (e.g., BPSK, QPSK, 8-PSK). A diagram of modulated symbols is shown. Buttons include Next, Change Modulation, Reset. The user can observe changes in constellation and waveform with each action. A comments box provides real-time feedback.
+
+* Experiment – A detailed interface allows input of custom parameters: modulation order (M), noise level (Eb/N0), and data length. Buttons include Start, Plot BER, Reset. The results are shown as constellation diagrams and BER vs Eb/N0 graphs.
+
 
 #### 2.2 Set User Objectives & Goals:
-Describe the objectives and goals in details here : (Guide : The user should clearly understand the aims and objective of the experiment. ( how he will begin experiment. in descriptive))
+| Learning Objectives                                                                                  | Cognitive Level |
+| ---------------------------------------------------------------------------------------------------- | --------------- |
+| Differentiate between various digital modulation schemes and their noise performance using BER plots | Analyse         |
+| Apply QPSK and M-ary PSK schemes on digital data using simulator tools                               | Apply           |
+| Evaluate BER performance under different channel conditions                                          | Evaluate        |
 
 #### 2.3 Set the Pathway Activities:
 
-Describe the pathway activites here : (Guide : Set the pathway activities in line with the learning objectives (LOs)  & with a view to achieve the goals set in introductory & pedagogy documnets.  (once he begins, how he will traverse through the entire experiment ? in descriptive))
+a) Demo:
+1. User clicks Start to visualize a basic QPSK or M-ary PSK waveform.
+
+2. Adjust Noise slider to add Gaussian noise.
+
+3. View the changing constellation diagram in real time.
+
+4. Pause and Resume functionalities enable step-by-step observation.
+
+5. Reset restores default settings.
+
+ b) Practice:
+
+1. User clicks Next to move through modulation types: BPSK → QPSK → 8-PSK → 16-PSK.
+
+2. Simulator displays waveform and symbol mapping for each type.
+
+3. Comments explain symbol spacing, phase differences, and error tolerance.
+
+4. Reset clears selections for a fresh start.
+
+c) Experiment:
+
+1. User enters Modulation Order, Noise Level (Eb/N0), and Data Length.
+
+2. Clicking Start simulates transmission and reception.
+
+3. Plot BER button generates BER vs Eb/N0 graphs.
+
+4. A comparison feature lets the user overlay BER curves for different schemes.
+
+5. Reset clears the data and graphs.
+
 
 ##### 2.4 Set Challenges and Questions/Complexity/Variations in Questions:
 
-Describe the challenges Here : (Guide : Set Challenges and Questions/Complexity/variations in questions according to User’s level, so as to invoke the learners’ interest.  (while traversing, what challenges he will face? how he has to solve and overcome ? descriptive).)
+Q1: Which modulation scheme has the highest bandwidth efficiency but lowest noise immunity?
 
+A. BPSK
+
+B. QPSK
+
+C. 16-PSK
+
+D. 64-PSK
+
+Q2: For QPSK in AWGN, the BER is closest to:
+
+A. Q(√2Eb/N0)
+
+B. Q(√Eb/N0)
+
+C. (1/2)exp(-Eb/N0)
+
+D. QPSK has no BER
+
+Q3: What happens to the constellation spacing in 16-PSK compared to QPSK?
+
+A. Increases
+
+B. Decreases
+
+C. Remains same
+
+D. Cannot be determined
+
+Q4: Which factor most affects BER in M-ary PSK?
+
+A. Sampling Rate
+
+B. Phase Offset
+
+C. Eb/N0 Ratio
+
+D. Symbol Rate
+
+Q5: How many bits are transmitted per symbol in 8-PSK?
+
+A. 1
+
+B. 2
+
+C. 3
+
+D. 4
 ##### 2.5 Allow pitfalls:
-Describe the pitfalls here: (Guide : while traversing or while solving challenge, how will we bring a situation in front of him that he commits mistake if he is not attentive , or not following procedure , descriptive)
+* If the user does not correctly set Eb/N0 before clicking "Plot BER", results will be skewed.
+
+* Selecting an invalid modulation order (e.g., M not a power of 2) will trigger an error message.
+
+* Misinterpreting constellation diagrams due to overlapping symbols at low SNR.
+
+
 
 ##### 2.6 Conclusion:
-Describe conclusion here : (Guide: This may include displaying: how much time did the user take to solve the questions/ How many questions were right?/ How many hints did the learner use. Based on this the evaluation/marking to be suggested to the user. (once he is towards the completion of the experiment, what LO he is taking along with him, what will be his probable, interpretation/conclusion , descriptive) )
+1. Immediate feedback is provided after the experiment. Upon submitting values, the simulator displays the correct BER curve and an explanation.
+
+2. Summary of performance is shown: selected parameters, achieved BER, comparison with theoretical curves.
+
+3. Scores can be given for correct predictions of BER or correct identification of constellation schemes.
+
+4. Total session time including pre-test, simulation, and post-test is approximately 60 minutes.
+
 
 ##### 2.7 Equations/formulas: NA
-Type equations here : (Guide : ( a separate sheet having equations / programs for the lab exper3ment to be shared along with the Story submissions (1) . You can mark it as numerical reference numbers within the story narration (like we cite in the research papers) and then separately share these equations/programs sheets as a reference, do not include the equations as a whole in the narration))
-Tool can be used to integrate formula in Markdown <b> [here](http://latex.codecogs.com/eqneditor/samples/example3.php) </b>
-
 
 ### 3. Flowchart
 Link to flow chart Here : Store in the  /flowchart folder within pedagogy folder in your repo
