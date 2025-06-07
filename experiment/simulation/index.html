@@ -11,23 +11,18 @@
 
 <body>
 	<!-- Your code goes here-->
-
 	<header>
 		<h1>Virtual Lab: Advanced Modulation Experiments</h1>
 	</header>
 	<main>
-		<section>
-			<h2>Experiment Overview</h2>
-			<p>
-				Welcome to the virtual modulation lab! Here you can experiment with advanced digital modulation schemes
-				like QPSK and M-ary PSK. Explore constellation diagrams, add noise, and observe the Bit Error Rate (BER)
-				performance.
-				This lab allows you to visualize how modulation, noise, and demodulation interact in communication
-				systems.
-			</p>
-		</section>
+		<section class="experiment_btn" id="experiment_btn">
+			<p>Please select the experiment you want to perform:</p>
+			 <button  onclick="showDiv('div1'); speak('QPSK Modulation & Demodulation experiment selected')">QPSK Modulation & Demodulation</button>
+             <button  onclick="showDiv('div2'); speak('M-ary PSK Modulation & Demodulation experiment selected') ">M-ary PSK Modulation & Demodulation</button>
+			<button onclick="speak('Resetting the page'); location.reload();">🔄 Reset</button>
 
-		<section>
+		</section>
+		<section id="div1" class="content-div">
 			<h2>QPSK Modulation & Demodulation</h2>
 			<div class="grid">
 				<div class="panel">
@@ -38,7 +33,7 @@
 					<label for="qpsk-num-symbols">Number of Symbols:
 						<input type="number" id="qpsk-num-symbols" value="1000" min="100" max="50000" step="100" />
 					</label>
-					<button id="qpsk-run">Run QPSK Simulation</button>
+					<button id="qpsk-run" onclick="speak('Running QPSK Simulation')">Run QPSK Simulation</button>
 					<div id="qpsk-error" class="error" style="display: none;"></div>
 				</div>
 
@@ -55,7 +50,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section id="div2" class="content-div">
 			<h2>M-ary PSK Modulation & Demodulation</h2>
 			<div class="grid">
 				<div class="panel">
@@ -74,7 +69,7 @@
 					<label for="mpsk-num-symbols">Number of Symbols:
 						<input type="number" id="mpsk-num-symbols" value="1000" min="100" max="50000" step="100" />
 					</label>
-					<button id="mpsk-run">Run M-ary PSK Simulation</button>
+					<button id="mpsk-run" onclick="speak('Running M-ary PSK Simulation')">Run M-ary PSK Simulation</button>
 					<div id="mpsk-error" class="error" style="display: none;"></div>
 				</div>
 
@@ -83,7 +78,6 @@
 					<canvas id="mpsk-constellation" width="400" height="300"
 						aria-label="M-ary PSK Constellation Diagram"></canvas>
 				</div>
-
 				<div class="panel">
 					<h3>BER Performance</h3>
 					<canvas id="mpsk-ber" width="400" height="300" aria-label="M-ary PSK BER Curve"></canvas>
@@ -92,12 +86,8 @@
 		</section>
 	</main>
 	<footer>
-		&copy; 2025 Virtual Modulation Lab 
+		&copy; 2025 Virtual Modulation Lab made by juggad_squad
 	</footer>
-
-
-</body>
-
 <!-- Add JS at the bottom of HTML file -->
 <script src="./js/main.js"></script>
 </body>

@@ -100,6 +100,7 @@ canvas {
 .grid {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 2rem;
     justify-content: space-between;
 }
@@ -137,4 +138,27 @@ footer {
     color: #ff5555;
     font-weight: 700;
     margin-top: 0.5rem;
+}
+
+/* 
+to the which expeiments the user want to do */
+.content-div {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.active {
+    display: block;
+}
+
+.experiment_btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    font-weight: 20px;
+    border-radius: 5px;
 }

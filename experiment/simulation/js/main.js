@@ -1,4 +1,29 @@
 //Your JavaScript goes in here
+// reload
+location.reload();
+
+
+//to the the experiments which one the user wamt to do 
+
+function showDiv(divId) {
+    // Hide both divs first
+    document.getElementById('div1').classList.remove('active');
+    document.getElementById('div2').classList.remove('active');
+
+    // Show the selected div
+    document.getElementById(divId).classList.add('active');
+}
+
+// voice
+window.onload = function () {
+    speak("Welcome to the virtual lab. Please select an experiment to begin.");
+}
+
+ function speak(text) {
+      const msg = new SpeechSynthesisUtterance(text);
+      msg.lang = 'en-US';
+      window.speechSynthesis.speak(msg);
+    }
 
 // Utility function: Generate random bits (0 or 1)
 function generateRandomBits(length) {
