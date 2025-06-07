@@ -1,6 +1,4 @@
 //Your JavaScript goes in here
-// reload
-location.reload();
 
 
 //to the the experiments which one the user wamt to do 
