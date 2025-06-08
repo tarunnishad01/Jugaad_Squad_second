@@ -4,19 +4,20 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Virtual Lab - Advanced Modulation Experiments</title>
+	<title>Interactive QPSK Modulation & Demodulation Lab</title>
 	<!-- Add CSS at the head of HTML file -->
 	<link rel="stylesheet" href="./css/main.css">
+	
 </head>
 
 <body>
 	<!-- Your code goes here-->
 	<header>
-		<h1>Virtual Lab: Advanced Modulation Experiments</h1>
+		<h1>Interactive QPSK Modulation & Demodulation Lab</h1>
 	</header>
 	<main>
 		<section class="experiment_btn" id="experiment_btn">
-			<p>Please select the experiment you want to perform:</p>
+			<p class="p">Please select the experiment you want to perform:</p>
 			 <button  onclick="showDiv('div1'); speak('QPSK Modulation & Demodulation experiment selected')">QPSK Modulation & Demodulation</button>
              <button  onclick="showDiv('div2'); speak('M-ary PSK Modulation & Demodulation experiment selected') ">M-ary PSK Modulation & Demodulation</button>
 			<button onclick="speak('Resetting the page'); location.reload();">🔄 Reset</button>
@@ -28,12 +29,12 @@
 				<div class="panel">
 					<h3>Parameters</h3>
 					<label for="qpsk-snr">SNR (dB):
-						<input type="number" id="qpsk-snr" value="10" min="0" max="30" />
+						<input type="number" id="qpsk-snr" value="5" min="0" max="20" />
 					</label>
 					<label for="qpsk-num-symbols">Number of Symbols:
 						<input type="number" id="qpsk-num-symbols" value="1000" min="100" max="50000" step="100" />
 					</label>
-					<button id="qpsk-run" onclick="speak('Running QPSK Simulation')">Run QPSK Simulation</button>
+					<button id="qpsk-run" onclick="runSimulationAndSpeak()">Run QPSK Simulation</button>
 					<div id="qpsk-error" class="error" style="display: none;"></div>
 				</div>
 
@@ -64,12 +65,12 @@
 						</select>
 					</label>
 					<label for="mpsk-snr">SNR (dB):
-						<input type="number" id="mpsk-snr" value="10" min="0" max="30" />
+						<input type="number" id="mpsk-snr" value="5" min="0" max="20" />
 					</label>
 					<label for="mpsk-num-symbols">Number of Symbols:
 						<input type="number" id="mpsk-num-symbols" value="1000" min="100" max="50000" step="100" />
 					</label>
-					<button id="mpsk-run" onclick="speak('Running M-ary PSK Simulation')">Run M-ary PSK Simulation</button>
+					<button id="mpsk-run" onclick="runmpskSimulationAndSpeak()">Run M-ary PSK Simulation</button>
 					<div id="mpsk-error" class="error" style="display: none;"></div>
 				</div>
 

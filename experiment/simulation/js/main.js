@@ -14,7 +14,7 @@ function showDiv(divId) {
 
 // voice
 window.onload = function () {
-    speak("Welcome to the virtual lab. Please select an experiment to begin.");
+    speak("Welcome to the Interactive QPSK Modulation & Demodulation Lab. Please select an experiment to begin.");
 }
 
  function speak(text) {
@@ -22,6 +22,22 @@ window.onload = function () {
       msg.lang = 'en-US';
       window.speechSynthesis.speak(msg);
     }
+ // qpsk moduation voice
+function runSimulationAndSpeak() {
+	const snr = document.getElementById("qpsk-snr").value;
+	const symbols = document.getElementById("qpsk-num-symbols").value;
+	const message = `Running QPSK Simulation with SNR of ${snr} decibels and ${symbols} symbols`;
+	speak(message);
+
+}
+// m-arry voice
+function runmpskSimulationAndSpeak() {
+    const order = document.getElementById("mpsk-m").value;
+    const snr = document.getElementById("mpsk-snr").value;
+	const symbols = document.getElementById("mpsk-num-symbols").value;
+	const message = `Running M-arr PSK Simulation with M (PSK Order) of ${order}, SNR of ${snr} decibels and ${symbols} symbols`;
+	speak(message);
+}
 
 // Utility function: Generate random bits (0 or 1)
 function generateRandomBits(length) {
