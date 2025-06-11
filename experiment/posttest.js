@@ -55,11 +55,7 @@
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
-
-        // color the answers green
-        //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
-        // if answer is wrong or blank
         // color the answers red
         answerContainers[questionNumber].style.color = "red";
       }
@@ -72,7 +68,6 @@
   const quizContainer = document.getElementById("quiz");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
- 
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -80,69 +75,65 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
 /////////////// Write the MCQ below in the exactly same described format ///////////////
-
 
   const myQuestions = [
     {
-      question: "On increasing the radius of the steel ball to double its value the terminal velocity of the ball become box:",  ///// Write the question inside double quotes
+      question: "What does QPSK stand for in digital modulation?",  
       answers: {
-        a: " double",                  ///// Write the option 1 inside double quotes
-        b: "four times",                  ///// Write the option 2 inside double quotes
-        c: "eight times",                  ///// Write the option 3 inside double quotes
-        d: "sixteen times"                   ///// Write the option 4 inside double quotes
+        a: "Quadrature Phase Shift Keying",
+        b: "Quick Phase Shift Keying",
+        c: "Quantum Phase Signal Keying",
+        d: "Quadratic Phase Sequence Keying"
       },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
+      correctAnswer: "a"
     },
 
     {
-      question: " On increasing density of material of the falling ball its terminal velocity:",  ///// Write the question inside double quotes
+      question: "How many distinct phase states are used in QPSK modulation?",  
       answers: {
-        a: "Increases",                  ///// Write the option 1 inside double quotes
-        b: "decreases",                  ///// Write the option 2 inside double quotes
-        c: "remains constant",                  ///// Write the option 3 inside double quotes
-        d: "NOT"                   ///// Write the option 4 inside double quotes
+        a: "2",
+        b: "4",
+        c: "8",
+        d: "16"
       },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
-    },                                  ///// To add more questions, copy the section below 
-    									                  ///// this line
-
-
-    /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
-        till closing curly braces comma ( }, )
-
-        and paste it below the curly braces comma ( below correct answer }, ) of above 
-        question
-
-    Copy below section
+      correctAnswer: "b"
+    },
 
     {
-      question: "This is question n?",
+      question: "In M-ary PSK, what does the 'M' denote?",  
       answers: {
-        a: "Option 1",
-        b: "Option 2",
-        c: "Option 3",
-        d: "Option 4"
+        a: "Modulation index",
+        b: "Number of frequencies",
+        c: "Number of phase states",
+        d: "Memory of the signal"
       },
       correctAnswer: "c"
     },
 
-    Copy above section
+    {
+      question: "What does BER stand for in digital communication?",  
+      answers: {
+        a: "Bit Error Ratio",
+        b: "Bandwidth Efficiency Rate",
+        c: "Binary Encoding Rate",
+        d: "Baseband Emission Result"
+      },
+      correctAnswer: "a"
+    },
 
-    */
-
-
-
+    {
+      question: "Which of the following factors does NOT affect the BER performance of a digital modulation scheme?",  
+      answers: {
+        a: "Noise in the channel",
+        b: "Modulation type",
+        c: "Antenna shape",
+        d: "Signal power"
+      },
+      correctAnswer: "c"
+    }
 
   ];
-
-
-
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -150,17 +141,9 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-
   // display quiz right away
   buildQuiz();
 
   // on submit, show results
   submitButton.addEventListener("click", showResults);
 })();
-
-
-/////////////////////////////////////////////////////////////////////////////
-
-/////////////////////// Do not modify the above code ////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////
