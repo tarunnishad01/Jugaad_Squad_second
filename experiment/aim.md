@@ -1,4 +1,3 @@
-### Aim of the experiment:
 To understand and analyze the performance of advanced digital modulation schemes such as QPSK and M-ary PSK through simulation and experimentation, and to evaluate their Bit Error Rate (BER) performance under varying channel conditions such as Additive White Gaussian Noise (AWGN) and fading channels. The experiment aims to:
 
 1.Demonstrate the signal constellation and waveform characteristics of QPSK and M-ary PSK schemes.
