@@ -1,5 +1,4 @@
-### Link your references in here:
-📚 References and Sources
+References and Sources
 For a deeper understanding and additional insights, consider the following resources:
 
 * Simulation of M-ary QAM and M-ary PSK Modulation Techniques
