@@ -82,62 +82,62 @@
 /////////////// Write the MCQ below in the exactly same described format ///////////////
 
   const myQuestions = [
-    {
-      question: "1. QPSK मॉड्यूलेशन में कितने फेज स्टेट्स होते हैं?",
-      answers: {
-        a: "2",
-        b: "4",
-        c: "8",
-        d: "16"
-      },
-      correctAnswer: "b"
+  {
+    question: "1. How many phase states are there in QPSK modulation?",
+    answers: {
+      a: "2",
+      b: "4",
+      c: "8",
+      d: "16"
     },
+    correctAnswer: "b"
+  },
 
-    {
-      question: "2. M-ary PSK में 'M' का क्या अर्थ होता है?",
-      answers: {
-        a: "फेज एंगल",
-        b: "फ्रिक्वेंसी की संख्या",
-        c: "मॉड्यूलेशन की दर",
-        d: "फेज स्टेट्स की संख्या"
-      },
-      correctAnswer: "d"
+  {
+    question: "2. What does 'M' represent in M-ary PSK?",
+    answers: {
+      a: "Phase angle",
+      b: "Number of frequencies",
+      c: "Modulation rate",
+      d: "Number of phase states"
     },
+    correctAnswer: "d"
+  },
 
-    {
-      question: "3. BER का पूर्ण रूप क्या है?",
-      answers: {
-        a: "Bit Error Rate",
-        b: "Binary Energy Ratio",
-        c: "Baseband Error Ratio",
-        d: "Bandwidth Error Rating"
-      },
-      correctAnswer: "a"
+  {
+    question: "3. What is the full form of BER?",
+    answers: {
+      a: "Bit Error Rate",
+      b: "Binary Energy Ratio",
+      c: "Baseband Error Ratio",
+      d: "Bandwidth Error Rating"
     },
+    correctAnswer: "a"
+  },
 
-    {
-      question: "4. QPSK का मुख्य लाभ क्या है?",
-      answers: {
-        a: "कम डेटा रेट",
-        b: "बेहतर स्पेक्ट्रल एफिशिएंसी",
-        c: "कम बैंडविड्थ की आवश्यकता",
-        d: "सिर्फ एनालॉग सिग्नल पर काम करता है"
-      },
-      correctAnswer: "b"
+  {
+    question: "4. What is the main advantage of QPSK?",
+    answers: {
+      a: "Lower data rate",
+      b: "Better spectral efficiency",
+      c: "Requires less bandwidth",
+      d: "Works only on analog signals"
     },
+    correctAnswer: "b"
+  },
 
-    {
-      question: "5. कौन सा कारक BER को प्रभावित नहीं करता है?",
-      answers: {
-        a: "सिग्नल पावर",
-        b: "नॉइज़",
-        c: "मॉड्यूलेशन स्कीम",
-        d: "रजिस्टर की लंबाई"
-      },
-      correctAnswer: "d"
-    }
+  {
+    question: "5. Which factor does NOT affect BER?",
+    answers: {
+      a: "Signal power",
+      b: "Noise",
+      c: "Modulation scheme",
+      d: "Register length"
+    },
+    correctAnswer: "d"
+  }
+];
 
-  ];
 
 /////////////////////////////////////////////////////////////////////////////
 
